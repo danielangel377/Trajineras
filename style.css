@@ -1,0 +1,664 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;}
+html{
+    font-size: 62.5%;
+    font-family: 'DM sans', sans-serif;
+}
+body{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+.container-float{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+.float-call{
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    width: 60px;
+    height: 60px;
+    background-image: url(./img/iconos/llamada-telefonica.png);
+    background-color:#edeff2;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.float-whats{
+    margin-top: 5px;
+    cursor: pointer;
+    border: none;
+    width: 60px;
+    height: 60px;
+    background-image: url(./img/iconos/whatsapp\ green.png);
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main{
+    max-width: 2000px;
+    width: auto;
+    padding: 20px 100px;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr ;
+    width: 100%;
+    background-color: #edeff2;
+}
+.container-icons{ 
+    justify-self: center;
+    max-width: 2000px;
+    width: 100%;
+    padding: 20px 50px;
+    display: grid;
+    justify-content: center;
+    justify-items: end;
+    align-items: center;
+    grid-template-columns: 1fr 2fr 0.5fr 0.5fr;
+}
+
+.socialreds{
+    padding-left: 20px;
+    justify-self: start;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.socialreds img{
+    cursor: pointer;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+}
+.logo{
+    cursor: pointer;
+    justify-self: center;    
+}
+.logo img{
+    width: 200px;
+}
+.busqueda{
+    cursor: pointer;
+    margin-right: 20px;
+}
+.busqueda img{
+    width: 25px;
+}
+.carrito{
+    margin-right: 20px;
+    display: flex;
+
+}
+.carrito  p{
+    align-self: center;
+}
+.carrito .carritoS{
+    cursor: pointer;
+    margin-left: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./img/iconos/carrito.png);
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.whats-container{
+    margin-top: 50px;
+    height: 800px;
+    background-image: url(./img/principal.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: groove #1e0dff 30px;
+}
+.whats-container .whatsApp{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    cursor: pointer;
+    background-color: #5ce02f;
+    color: aliceblue;
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 250px;
+    height: 90px;
+    position: relative;
+    bottom: -500px;
+    left: 200px;
+}
+.whatsApp:hover{
+    background-color: #648457;
+    transition: .5s;
+}
+ .icon-whats{
+    filter: invert(1);
+    order: -1;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./img/iconos/whatsapp2.png);
+
+}
+.container-info{
+
+    padding: 100px 30px 0px 60px;
+    display: grid;
+    grid-template-columns: 1fr 0.3fr 1fr 0.5fr;
+    grid-template-rows: repeat(5, 200px);
+    grid-template-areas: 
+    "imagen1 title title title"
+    "imagen1 title title title"
+    "imagen1 info info info"
+    "imagen1 imagen2 imagen2 imagen2"
+    "imagen1 imagen2 imagen2 imagen2"
+    ;
+}
+.container-info .imagen1{
+    width: 400px;
+    grid-area: imagen1;
+
+}
+.container-info .title{
+    padding-left: 30px;
+    font-family: Merryweather;
+    justify-self: start;
+    font-size: 5.0rem;
+    grid-area: title;
+    
+}
+.container-info .info{
+    margin-top: -60px;
+    padding-left: 30px;
+    font-family: Hind;
+    font-size: 2.0rem;
+    grid-area: info;
+}
+.container-info .imagen2{
+    padding-left: 60px;
+    max-width: 700px;
+    grid-area: imagen2;
+}
+ hr{
+    margin-top: -30px;
+    opacity: 0.1;
+    background-color: black;
+    height: 10px;
+    width: 100%;
+}
+.Promos-container{
+    padding: 50px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 5.0rem;
+    font-family: Merryweather;
+}
+.productos-container{
+    justify-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 20PX 0 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.productos-container img{
+   
+    cursor: pointer;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+.productos-container .Producto{
+    padding: 50px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.productos-container .paquete-info{
+    padding: 20px 0 20px;
+    text-align: center;
+    font-size: 1.7rem;
+}
+.productos-container .button-container{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+.productos-container .details{
+    cursor: pointer;
+    border: none;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: aliceblue;
+    width: 97px;
+    height: 40px;
+    background-color: black;
+}
+.productos-container .whats-product{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    color: aliceblue;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 10px ;
+    cursor: pointer;
+    border: none;
+    width: 249px;
+    height: 40px;
+    background-color: #25d366;
+}
+.productos-container .details:hover{
+    background-color: dimgrey;
+    transition: .3s;
+}
+.productos-container .whats-product:hover{
+    background-color: #648457;
+    transition: .3s;
+}
+.paseo-images{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    justify-items: center;
+}
+.paseo-images img{
+    padding: 0 10px 0 10px;
+    width: 400px;
+    height: 362px;
+    object-fit: cover;
+}
+.conacto-info-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 800px;
+    background-image: url(./img/principal.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: groove #1e0dff 30px;
+}
+.conacto-info-container .contacto-info{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    background-color: #fff; 
+    border:  10px solid #f6f7f7;
+}
+.info-contacto{
+    opacity: .6;
+    color: #012130;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 3rem;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+.conacto-info-container hr{
+    width: 70%;
+    margin: 50px 0;
+}
+.form-contacto2-container{
+    gap: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-top: 50px;
+    height: 800px;
+    background-image: url(./img/principal.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: groove #1e0dff 30px;
+}
+.form-contacto2-container hr{
+    margin: 20px 0;
+    width: 80%;
+}
+.form-contacto2-container .contacto2-container{
+    justify-self: end;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+    height: 70%;
+    background-color: #fff; 
+    border:  10px solid #f6f7f7;
+}
+
+.contacto2-container .socialreds-2{
+    
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.socialreds-2 img{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+.form-contacto2-container .form-container{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: .2fr 1fr;
+    padding: 20px 0;
+    width: 80%;
+    height: 70%;
+    background-color: #fff; 
+    border:  10px solid #f6f7f7;
+
+}
+.form-container h2{
+    font-size: 5.0rem;
+    font-family: 'Merryweather';
+    font-weight: bold;
+}
+
+.form-container form{
+    width: 80%;
+    border: solid 2px #504e4a13;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.form-container form input{
+    border: solid 2px #504e4a3e;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 10px;
+    border-radius: 15px;
+    width: 330px;
+    height: 40px;
+}
+.form-container form .enviar{
+    border: none;
+    cursor: pointer;
+    color: aliceblue;
+    background-color: black;
+    margin-left: 40px;
+    justify-self: start;
+    width: 30%;
+    height: 40px;
+}
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;}
+
+form .enviar:hover{
+    background-color: dimgray;
+    transition: .2s;
+}
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+}
+
+
+@media screen and (max-width: 1400px){
+    main{       
+         padding: 20px 50px;
+    }
+        .container-info .imagen2{
+        padding-left: 40px;
+        width: 450px;
+    }
+    hr{
+        margin-top: 30px;
+        opacity: 0.1;
+        background-color: black;
+        height: 10px;
+        width: 100%;
+    }
+    .productos-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .paseo-images img{
+        width: 300px;
+        height: 250px;
+        object-fit: cover;
+    }
+    .form-container form input{
+        width: 280px;
+    }
+}
+@media screen and (min-width:701px) and (max-width: 1100px){
+    main{
+        padding: 20px 70px;
+        width: 100%;
+    }
+    .container-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
+     .container-info .imagen1{
+         width: 500px;
+     }
+     .container-info .title{
+         font-size: 4rem;
+         padding: 20px 0;
+         text-align: center;
+     }
+     .container-info .info{
+         font-size: 2.0rem;
+         padding-left: 0;
+         text-align: center;
+         margin: 20px 0 40px 0;
+     }
+     .container-info .imagen2 {
+         padding-left: 0;
+         width: 100%;
+     }
+  
+     .productos-container img{
+        width: 285px;
+        height: 200px;
+    }
+    .productos-container .details{
+        margin: 0 ;
+        width: 80px;
+    }
+    .productos-container .whats-product{
+        margin: 0;
+        width: 210px;
+    }
+    .paseo-images img{
+        width: 100%;
+        max-width: 250px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .form-contacto2-container{
+        gap: 0;
+        height: auto;
+        justify-items: center;
+        grid-template-columns: 1fr;
+    }
+    .form-contacto2-container .contacto2-container{
+        margin-top: 50px;
+        height: 500px;
+        justify-self: center;
+    }
+    .form-contacto2-container .form-container{
+    height: 500px;
+    
+}}
+
+@media screen and (max-width: 700px) {
+  
+    main{
+        width: 100%;
+        padding: 10px 10px;
+    }
+    .logo img{
+        width: 80px;
+    }
+    .whats-container{ 
+        min-width: 100px;
+        margin-top: 10px;
+        height: 300px;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .whats-container .whatsApp{
+       width: 200px;
+       height: 70px;
+        position:initial;
+    }
+    .socialreds{
+        display: none;
+    }
+    .carrito{
+        margin-left: 10px;
+        margin-right: -20px;
+    }
+    .busqueda{
+        margin-left: 10px;
+        order: -1;
+    }
+    .container-info{
+        padding: 100px 30px 0px 30px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+    .container-info .imagen1{
+        width: 100%;
+    }
+    .container-info .title{
+        font-size: 2.5rem;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .container-info .info{
+        font-size: 1.5rem;
+        padding-left: 0;
+        text-align: center;
+        margin: 20px 0 40px 0;
+    }
+    .container-info .imagen2 {
+        padding-left: 0;
+        width: 70%;
+    }
+    
+    .productos-container{
+        padding: 0 30px 0px 30px;
+        grid-template-columns: 1fr;
+    }
+    .productos-container img{
+        width: 285px;
+        height: 200px;
+    }
+    .productos-container .Producto{
+        padding: 10px 0;
+    }
+    .productos-container .paquete-info{
+        padding: 4px 0;
+    }
+    .productos-container .details{
+        font-size: 1.0rem;
+        margin: 0 3px;
+        width: 70px;
+    }
+    .productos-container .whats-product{
+        font-size: 1.0rem;
+        margin: 0 3px;
+        width: 200px;
+    }
+    .paseo-images{
+        display: none;
+    }
+    .conacto-info-container{
+        padding: 0;
+    }
+    .conacto-info-container .contacto-info{
+        padding: 0;
+    }
+    .conacto-info-container img{
+        width: 100%;
+        height: auto;
+    }
+   .info-contacto{
+        margin: -50px;
+        font-size: 1.2rem;
+    }
+    .conacto-info-container hr{
+        margin: 0 -100px;
+    }
+    .form-contacto2-container{
+        gap: 0;
+        height: auto;
+        justify-items: center;
+        grid-template-columns: 1fr;
+    }
+    .form-contacto2-container .contacto2-container{
+        margin-top: 50px;
+        height: 500px;
+        justify-self: center;
+    }
+    .form-contacto2-container .contacto2-container .info-contacto{
+        padding: 35px 0;
+    }
+    .form-contacto2-container img{
+        width: 100%;
+        height: auto;
+    }
+    .form-contacto2-container h2{
+        font-size: 3.5rem;
+    }
+    .form-contacto2-container .socialreds-2{
+        width: 60%;
+        max-width: 180px;
+        height: auto;
+    }
+    .form-contacto2-container .form-container{
+         height: 500px;
+    }
+    .form-contacto2-container .form-container input{
+        width: 100%;
+    }
+    .form-container form .enviar{
+        justify-self: center;
+        margin-left: 0;
+    }
+    
+}
