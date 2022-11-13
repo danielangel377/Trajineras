@@ -1,4 +1,16 @@
 const productscontainer  = document.querySelector('.productos-container');
+const menuIcon = document.querySelector('.menu-icon');
+const menuMobile = document.querySelector('.menu-mobil');
+const containerClose = document.querySelector('.container-close');
+containerClose.addEventListener('click', removeMobile);
+menuIcon.addEventListener('click', togglemenuMobile);
+
+function removeMobile(){
+    menuMobile.classList.add('inactive');
+}
+function togglemenuMobile(){
+    menuMobile.classList.toggle('inactive');
+}
 
 const productList = [];
 

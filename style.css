@@ -6,6 +6,8 @@ html{
     font-size: 62.5%;
     font-family: 'DM sans', sans-serif;
 }
+
+
 body{
     align-items: center;
     display: flex;
@@ -28,8 +30,7 @@ body{
     width: 60px;
     height: 60px;
     background-image: url(./img/iconos/llamada-telefonica.png);
-    background-color:#edeff2;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -56,6 +57,9 @@ header{
     grid-template-columns: 1fr ;
     width: 100%;
     background-color: #edeff2;
+}
+.menu-icon{
+    display: none;
 }
 .container-icons{ 
     justify-self: center;
@@ -521,7 +525,81 @@ footer{
 }}
 
 @media screen and (max-width: 700px) {
-  
+    .menu-mobil{
+        position: fixed;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr 0.2fr 1fr;
+        justify-content: center;
+        justify-items: center;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        height: 100%;
+    }
+    .container-close{
+        align-self: center;
+        justify-self: end;
+        margin: 20px;
+    }
+    .menu-mobil .socialreds-container{
+        padding: 0 10px 0 10px;
+        gap: 30px;
+        display:  grid;
+        align-self: flex-start;
+        justify-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        justify-self: center;
+    }
+    .socialreds-container img{
+        filter: invert(1);
+        width: 80%;
+        max-width: 100px;
+    }
+    .menu-mobil hr{
+        height: 1px;
+        width: 80%;
+        background-color: #edeff2;
+        opacity: 1;
+    }
+    .menu-mobil .search-container {
+        justify-self: center;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        width: 90%;
+       
+    }
+    .search-container{
+        align-self: center;
+    }
+    .search-container .search-menu{
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        width: 90%;
+        height: 40px;
+        background-color: #edeff2;
+    }
+    .search-menu span{
+        align-self: center;
+        width: 30px;
+        height: 30px;
+        background-image: url(./img/iconos/busqueda.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+     .input-search{
+        height: 90%;
+        width: 80%;
+        border: none;
+        background-color: #edeff2;
+        align-self: center;
+    }
+    .inactive{
+        display: none;
+    }
     main{
         width: 100%;
         padding: 10px 10px;
@@ -547,12 +625,17 @@ footer{
         display: none;
     }
     .carrito{
-        margin-left: 10px;
         margin-right: -20px;
     }
+    .carrito .carritoS{
+        margin-left: 0px;
+    }
+    .menu-icon{
+        display: block;
+        justify-self: start;
+    }
     .busqueda{
-        margin-left: 10px;
-        order: -1;
+        display: none;
     }
     .container-info{
         padding: 100px 30px 0px 30px;
